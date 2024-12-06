@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color: darkmagenta;
+color: white;
+}
+.main{
+    display: flex;
+    padding-top: 50px;
+   text-align: center;
+   justify-content: center;
+}
+.card{
+    display: flex;
+    gap: 10px;
+}
+button{
+    padding: 10px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+#demo{
+   
+    padding-top: 42px;
+    padding-left: 6px;
+}
+.price{
+    padding-top: 43px;
+    font-weight: bold;
+}
+.p{
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.main2{
+    display: flex;
+    padding-top: 50px;
+   text-align: center;
+   justify-content: center;
+}
+.card2{
+    display: flex;
+    gap: 10px;
+}
+button{
+    padding: 10px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+#demo2{
+   
+    padding-top: 42px;
+    padding-left: 6px;
+}
+.total-btn{
+    margin-left: 40%;
+}
+.sp{
+    padding-left: 45%;
+ 
+}

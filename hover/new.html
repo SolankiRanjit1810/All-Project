@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./new.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-logo">
+          <a><h2>LOGO</h2><!--<img src="#">--></a>
+        </div>
+        <div class="nav-menu-mobile" data-status="closed">
+          <span>MENU</span>
+          <i class="menu-toggle fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a class="nav-menu-item" href="#">Home</a></li>
+          <li><a class="nav-menu-item" href="#">Info</a></li>
+          <li><a class="nav-menu-item" href="#">Contact</a></li>
+          <li><div class="nav-menu-item nav-dropdown">
+            About
+            <a class="dropdown-item">Dropdown Item 1</a>
+            <a class="dropdown-item">Dropdown Item 2</a>
+            <a class="dropdown-item">Dropdown Item 3</a>
+            <a class="dropdown-item">Dropdown Item 4</a>
+              
+            </div></li>
+          <li><a class="nav-menu-item" href="#">More</a></li>
+        </ul>
+        
+      </div>
+      <script>
+        //Initial setup
+function init(){
+  checkWidth();
+  setDropdowns();
+}
+
+function setDropdowns(){
+  let i = 1;
+  $('.dropdown-item').each(function(){
+    $(this).css('top', `${i*$(this).height()}px`)
+    i++;
+  });
+}
+
+// Switching navbar display based on width
+function checkWidth(){
+  var windowWidth = $(window).width();
+
+  if(windowWidth>1000){
+    $('.nav-menu-mobile').hide();
+    $('.nav-menu').show();
+  }
+  else{
+    $('.nav-menu-mobile').show();
+    $('.nav-menu').hide();
+    $('.menu-toggle').addClass('fa-bars');
+    $('.menu-toggle').removeClass('fa-xmark');
+    $('.nav-menu-mobile').data('status', 'closed')
+    $('.nav-menu-mobile').css('transform', `translateX(0)`);
+  }
+}
+
+function toggleNavMenu(){
+  let windowWidth = $('.navbar').width();
+  let menuToggleWidth = $('.nav-menu-mobile').width();
+  let translateVal = (windowWidth/2)-(menuToggleWidth/2);
+  if($('.nav-menu-mobile').data('status')=='closed'){
+    $('.nav-menu-mobile').data('status', 'open')
+    $('.nav-menu-mobile').css('transform', `translateX(-${translateVal}px)`);
+  }
+  else{
+    $('.nav-menu-mobile').data('status', 'closed')
+    $('.nav-menu-mobile').css('transform', `translateX(0)`);
+  }
+  $('.nav-menu').toggle();
+  $('.menu-toggle').toggleClass('fa-bars');
+  $('.menu-toggle').toggleClass('fa-xmark');
+}
+
+$(window).resize(checkWidth);
+$(document).ready(init);
+$('.nav-menu-mobile').click(toggleNavMenu);
+      </script>
+</body>
+</html>

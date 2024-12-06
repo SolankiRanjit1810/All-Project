@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <style>
+             *{
+                margin: 0;
+                padding: 0;
+             }
+
+            .main1{
+                padding-top: 20px;
+                padding-left: 30%;
+             
+                 
+            }
+            .main2{
+                padding-left: 30%;
+                padding-top: 20px;
+            }
+            .main3{
+                padding-left: 30%;
+                padding-top: 20px;
+            }
+            .main4{
+                padding-left: 30%;
+                padding-top: 20px;
+            }
+            .main5{
+                padding-left: 30%;
+                padding-top: 20px;
+            }
+            img {
+                border: 2px solid black;
+            }
+            .parent{
+                border: 2px solid black;
+                box-sizing: border-box;
+            }
+
+      </style>
+</head>
+
+<body>
+    <div class="parent">
+
+        
+        <div class="main1">
+            <img src="./50.jpg" alt="" height="100px">
+            <button>50</button>
+            <button>*</button>
+            <input type="text" oninput="note1()" id="not1">
+            <input type="text" readonly id="price1">
+        </div>
+        
+        <div class="main2">
+        <img src="./100.avif" alt="" height="100px">
+        <button>100</button>
+        <button>*</button>
+        <input type="text" oninput="note1()" id="not2">
+        <input type="text" readonly id="price2">
+    </div>
+    
+    
+    <div class="main3">
+        <img src="./200.png" alt="" height="100px">
+        <button>200</button>
+        <button>*</button>
+        <input type="text" oninput="note1()" id="not3">
+        <input type="text" readonly id="price3">
+    </div>
+    
+    
+    <div class="main4">
+        <img src="./500.jpg" alt="" height="100px">
+        <button>500</button>
+        <button>*</button>
+        <input type="text" oninput="note1()" id="not4">
+        <input type="text" readonly id="price4">
+    </div>
+    
+    
+    <div class="main5">
+        <img src="./2000.jpg" alt="" height="150px">
+        <button>2000</button>
+        <button>*</button>
+        <input type="text" oninput="note1()" id="not5">
+        <input type="text" readonly id="price5">
+    </div>
+    
+</div>
+    
+    <p class="rp">total Praice : <span id="total"></span></p>
+    
+    
+    <p class="sp">total not : <span id="note-total"></span></p>
+    <script>
+
+
+        function note1() {
+            let a = 50;
+            let b = document.getElementById("not1").value;
+            document.getElementById("price1").value = a * b;
+
+
+            let c = 100;
+            let d = document.getElementById("not2").value;
+            document.getElementById("price2").value = c * d;
+
+            let i = 200;
+            let f = document.getElementById("not3").value;
+            document.getElementById("price3").value = i * f;
+
+
+
+            let g = 500;
+            let h = document.getElementById("not4").value;
+            document.getElementById("price4").value = g * h;
+
+
+            let k = 2000;
+            let l = document.getElementById("not5").value;
+            document.getElementById("price5").value = k * l;
+
+
+
+            let final = a * b + c * d + i * f + g * h + k * l;
+            document.getElementById("total").innerHTML = final;
+
+            let finall = Number(b) +  Number(d) + Number(f) + Number(h) + Number(l);
+            document.getElementById("note-total").innerHTML = finall;
+        }
+
+    </script>
+
+
+</body>
+
+</html>

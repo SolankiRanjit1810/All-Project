@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    background-color:#04000a;
+   padding: 30px;
+}
+nav{
+    padding-left: 11%;
+    padding-top: 16px;
+}
+nav a{
+    padding-left: 67px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.icon{
+    color: white;
+    padding-top: 16px;
+    padding-left: 13%;
+   font-size: 20px;
+}
+.fa-magnifying-glass{
+    padding-left: 20px;
+}
+.fa-bars{
+    padding-left: 20px;
+}
+.Home{
+    color: #b20d5d;
+}
+.Button{
+       margin-left: 50px;
+       padding: 20px;
+       font-size: 15px;
+       border-radius: 60px;
+       color: white;
+       border: none;
+       background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%);
+}
+
+.main-2{
+    background-color: #04000a;
+    height: 60vh;
+    color: white;
+    padding-left: 17%;
+    padding-top: 7%;
+}
+.img-a{
+    position: absolute;
+    height: 300px;
+    padding-left: 50%;
+    padding-top: 33px;
+
+    z-index: 500;
+}
+.circle{
+    height: 363px;
+    position: absolute;
+    padding-left: 45%;
+}
+.dot-dot{
+    margin-left: 99px;
+    padding-top: 10%;
+    height: 250px;
+    position: absolute;
+    padding-left: 51%;
+   
+}
+.star-1{
+    position: absolute;
+    padding-left: 71.7%;
+}
+.star-2{
+    position: absolute;
+    padding-left: 43%;
+}
+.text{
+    padding-left: 110px;
+}
+.text p{
+   font-size: 20px;
+}
+.text h2{
+    padding-top: 10px;
+    font-size: 40px;
+}
+.text span{
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+.lorem{
+    padding-left: 110px;
+    padding-top: 15px;
+
+}
+
+.lorem p{
+    font-size: 20px;
+}
+.lorem-icon{
+    padding-left: 110px;
+    display: flex;
+    padding-top: 15px;
+    font-size: 20px;
+}
+.fa-location-dot{
+   
+}
+.fa-clock{
+
+}
+
+.p-2{
+    padding-left: 30px;
+}
+.btn{
+    padding: 20px;
+     margin-left: 110px;
+     margin-top: 20px;
+     font-size: 15px;
+     border-radius: 60px;
+     color: white;
+     border: none;
+     background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%);
+}
+
+

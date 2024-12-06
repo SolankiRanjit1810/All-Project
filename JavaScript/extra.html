@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="maincard">
+<div class="card">
+<h1>counter</h1>
+<h1 id="demo" style="margin-top: 50px; font-size: 50px;"> 0 </h1> 
+<div class="parent">
+<button class="b1" onclick="add()"> +</button>
+<button class="b2" onclick="reset()"> reset</button>
+<button class="b3" onclick="sub()">-</button>
+</div>
+</div>
+</div>
+</di>
+<script> 
+let a=0;
+let b=a;
+function add(){
+document.getElementById("demo") .innerHTML = ++a;
+}
+function sub(){
+    document .getElementById("demo") .innerHTML = --a;
+}
+function reset(){
+document.getElementById ("demo") .innerHTML= b;
+}
+</script>
+</body>
+</html>

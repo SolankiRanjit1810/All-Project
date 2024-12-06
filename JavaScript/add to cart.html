@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <div class="main">
+             <div>
+                  <img src="./img/MAle Bag.webp" alt="" height="100px">
+             </div>
+             <div class="price">
+                 <h2>
+                    price: 700
+                 </h2>
+             </div>
+             <div class="card">
+                <button onclick="add()">+</button>
+                <p id="demo"></p>
+                <button onclick="sub()">-</button>
+             </div>
+             <div class="p">
+             <p>Total price is: <span id="tot"></span></p>
+             </div>
+      </div>
+
+
+
+      <div class="main2">
+         <div>
+              <img src="./img/Parfume.avif" alt="" height="100px">
+         </div>
+         <div class="price">
+             <h2>
+                price: 1500
+             </h2>
+         </div>
+         <div class="card2">
+            <button onclick="abb()">+</button>
+            <p id="demo2"></p>
+            <button onclick="svv()">-</button>
+         </div>
+         <div class="p">
+         <p>Total price is: <span id="tot1"></span></p>
+         </div>
+  </div>
+        
+          <button class="total-btn">total</button>
+           <p class="sp">total Praice : <span id="total"></span></p>
+    
+
+
+      <script>
+          let b = 0; 
+         let a = 0; 
+         let finalvalue;
+
+         function add() {
+             
+               document.getElementById ("demo").innerHTML = ++a;
+            document.getElementById ("tot").innerHTML = a * 700;
+            
+            updatetatal()
+         }
+         function sub() {
+                 if(a>0)
+               document.getElementById ("demo").innerHTML = --a;
+               document.getElementById ("tot").innerHTML = a * 700;
+            
+            updatetatal()
+         }
+        
+
+
+        
+
+function abb() {
+
+      document.getElementById ("demo2").innerHTML = ++b;
+      document.getElementById ("tot1").innerHTML = b * 1500;     
+            
+   updatetatal()
+}
+function svv() {
+        if(b>0)
+      docment.getElementById ("demo2").innerHTML = --b;
+      document.getElementById ("tot1").innerHTML = b * 1500;
+   updatetatal()
+}
+   
+          function updatetatal() {
+            let finalvalue = ( a * 700) + (b * 1500);   
+            document.getElementById("total").innerHTML = finalvalue;  
+          }
+
+
+      </script>
+</body>
+</html>
