@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        .contenar{
+           text-align: center;
+           padding-top: 50px;
+        }
+        .main{
+           text-align: center;
+           padding-top: 50px;
+        }
+       
+      
+      .p-2{
+        display: none;
+      }
+      .p-3{
+        display: none;
+      }
+      .p-4{
+        display: none;
+      }
+      .p-5{
+        display: none;
+      }
+
+
+      .r-1{
+        display: block;
+      }
+    </style>
+</head>
+<body>
+
+    <img src="./1.jpg" alt="" class="p-1">
+    <img src="./2.jpg" alt=""b class="p-2">                      
+    <img src="./3.jpg" alt="" class="p-3">
+    <img src="./4.jpg" alt="" class="p-4">
+    <img src="./5.jpg" alt="" class="p-5">
+
+    <img src="./1.jpg" alt="" class="r-1">
+    <img src="./2.jpg" alt="" class="r-2">
+    <img src="./3.jpg" alt="" class="r-2">
+    <img src="./4.jpg" alt="" class="r-4">
+    <img src="./5.jpg" alt="" class="r-5">
+
+    <h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, et!
+  </h1>
+  <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, sint?
+  </p>
+  <button class="hide">HIDE</button>
+  <button class="show">SHOW</button>
+  <button class="tog">TOGGLE</button>
+  <button class="slideup">SLIDE UP</button>
+  <button class="slidedown">SLIDE down</button>
+  <button class="slidetog">SLIDE TOGGLE</button>
+  <button class="color">CSS</button>
+  <script>
+      $(document).ready(function(){
+          $(".hide").click(function(){
+              $("h1").hide();
+          });
+          $(".show").click(function(){
+              $("h1").show();
+          })
+          $(".tog").click(function(){
+              $("h1").toggle();
+          })
+          $(".slideup").click(function(){
+              $("h1").slideUp();
+          })
+          $(".slidedown").click(function(){
+              $("h1").slideDown();
+          })
+          $(".slidetog").click(function(){
+              $("h1").slideToggle("slow");
+          })
+          $(".color").click(function(){
+              $("p-1").css({display : "none"})
+              $("r-1").css({display : "block"})
+          })
+      })
+         </script>
+</body>
+</html>
